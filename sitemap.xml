@@ -7,9 +7,19 @@
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://www.vighex.in/about</loc>
+      <loc>https://www.vighex.in/about.html</loc>
       <lastmod>2025-05-10</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
+   
+   
+   <url>
+  <loc>https://vighex.in/index.html</loc>
+  <image:image>
+    <image:loc>https://vighex.in/assets/images/vighex_1.png</image:loc>
+    <image:caption>VigHex Technologies</image:caption>
+  </image:image>
+</url>
+
 </urlset>
