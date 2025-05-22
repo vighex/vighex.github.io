@@ -62,7 +62,7 @@
     
    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laurel Template</title>
+    <title>VigHex Template</title>
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700|Playfair+Display:700" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -121,7 +121,7 @@
                         <h1 class="m-0">
                             <a href="#">
 								<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-									<title>Laurel</title>
+									<title>VigHex</title>
 								    <defs>
 								        <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="logo-a">
 								            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
@@ -274,7 +274,7 @@
             Generate
           </button>
 
-          <button 
+          <input type="button" value="Download"
             id="downloadBtn" 
             onclick="downloadQR()" 
             style="
@@ -289,9 +289,9 @@
             "
             onmouseover="this.style.backgroundColor='#47A1F9'; this.style.color='white';"
             onmouseout="this.style.backgroundColor='white'; this.style.color='#47A1F9';"
-          >
-            Download
-          </button>
+          />
+            
+         
         </div>
 
         <div 
@@ -318,65 +318,73 @@
 </section>
 
             <section class="media section">
-                <div class="container-sm">
-                    <div class="media-inner section-inner">
-                        <div class="media-header text-center">
-                            <h2 class="section-title mt-0">Meet Laurel</h2>
-                            <p class="section-paragraph mb-0">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
-                        </div>
-						<div class="media-canvas">
-							<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
-							    <defs>
-							        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="media-canvas">
-							            <stop stop-color="#06101F" offset="0%"/>
-							            <stop stop-color="#1D304B" offset="100%"/>
-							        </linearGradient>
-							    </defs>
-							    <rect width="800" height="450" rx="8" fill="url(#media-canvas)" fill-rule="evenodd"/>
-							</svg>
-							<div class="media-control">
-								<svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
-								    <defs>
-								        <linearGradient x1="87.565%" y1="15.873%" x2="17.086%" y2="80.538%" id="media-control">
-								            <stop stop-color="#FFF" stop-opacity=".64" offset="0%"/>
-								            <stop stop-color="#FFF" offset="100%"/>
-								        </linearGradient>
-										<filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="media-shadow">
-                                            <feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"></feOffset>
-                                            <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"></feGaussianBlur>
-                                            <feColorMatrix values="0 0 0 0 0.024 0 0 0 0 0.064 0 0 0 0 0.12 0 0 0 0.24 0" in="shadowBlurOuter"></feColorMatrix>
-                                        </filter>
-								    </defs>
-								    <g fill="none" fill-rule="evenodd">
-								        <circle fill="#FFF" cx="48" cy="48" r="48" style="mix-blend-mode:multiply;filter:url(#media-shadow)"/>
-										<circle fill="url(#media-control)" cx="48" cy="48" r="48"/>
-								        <path d="M44.6 39.2a1.001 1.001 0 0 0-1.6.8v18a1.001 1.001 0 0 0 1.6.8l12-9a.998.998 0 0 0 0-1.6l-12-9z" fill="#1D304B"/>
-								    </g>
-								</svg>
-							</div>
-						</div>
-                    </div>
-                </div>
-            </section>
+  <div class="container-sm">
+    <div class="media-inner section-inner">
+      <div class="media-header text-center">
+        <h2 class="section-title mt-0">AI QR Code Generator by Vighex</h2>
+        <p class="section-paragraph mb-0">
+          Instantly generate secure, customizable QR codes using Vighex's powerful AI engine. Free to use – no login required. Perfect for businesses, events, and personal branding.
+        </p>
+      </div>
+
+      <div class="media-canvas">
+        <svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="media-canvas">
+              <stop stop-color="#06101F" offset="0%" />
+              <stop stop-color="#1D304B" offset="100%" />
+            </linearGradient>
+          </defs>
+          <rect width="800" height="450" rx="8" fill="url(#media-canvas)" fill-rule="evenodd" />
+        </svg>
+
+        <div class="media-control">
+          <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient x1="87.565%" y1="15.873%" x2="17.086%" y2="80.538%" id="media-control">
+                <stop stop-color="#FFF" stop-opacity=".64" offset="0%" />
+                <stop stop-color="#FFF" offset="100%" />
+              </linearGradient>
+              <filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="media-shadow">
+                <feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"></feOffset>
+                <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"></feGaussianBlur>
+                <feColorMatrix values="0 0 0 0 0.024 0 0 0 0 0.064 0 0 0 0 0.12 0 0 0 0.24 0" in="shadowBlurOuter"></feColorMatrix>
+              </filter>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#FFF" cx="48" cy="48" r="48" style="mix-blend-mode:multiply;filter:url(#media-shadow)" />
+              <circle fill="url(#media-control)" cx="48" cy="48" r="48" />
+              <path d="M44.6 39.2a1.001 1.001 0 0 0-1.6.8v18a1.001 1.001 0 0 0 1.6.8l12-9a.998.998 0 0 0 0-1.6l-12-9z" fill="#1D304B" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 			<section class="newsletter section">
-                <div class="container-sm">
-                    <div class="newsletter-inner section-inner">
-                        <div class="newsletter-header text-center">
-                            <h2 class="section-title mt-0">Stay in the know</h2>
-                            <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
-                        </div>
-                        <div class="footer-form newsletter-form field field-grouped">
-                            <div class="control control-expanded">
-                                <input class="input" type="email" name="email" placeholder="Your best email&hellip;">
-                            </div>
-                            <div class="control">
-                                <a class="button button-primary button-block button-shadow" href="#">Early access</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+  <div class="container-sm">
+    <div class="newsletter-inner section-inner">
+      <div class="newsletter-header text-center">
+        <h2 class="section-title mt-0">Get Updates on ID Card Software & AI QR Tools</h2>
+        <p class="section-paragraph">
+          Subscribe to receive updates on Vighex's latest innovations in ID card design software, free QR code generators, and smart AI-driven tools for businesses and institutions.
+        </p>
+      </div>
+      <div class="footer-form newsletter-form field field-grouped">
+        <div class="control control-expanded">
+          <input class="input" type="email" name="email" placeholder="Enter your email to stay updated&hellip;">
+        </div>
+        <div class="control">
+          <a class="button button-primary button-block button-shadow" href="#">Subscribe Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
         </main>
 
         <footer class="site-footer">
@@ -385,7 +393,7 @@
                     <div class="brand footer-brand">
                         <a href="#">
 							<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-								<title>Laurel</title>
+								<title>VigHex</title>
 								<defs>
 									<linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="logo-footer-a">
 										<stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
@@ -444,7 +452,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="footer-copyright">&copy; 2018 Laurel, all rights reserved</div>
+                    <div class="footer-copyright">&copy; 2018 VigHex, all rights reserved</div>
                 </div>
             </div>
         </footer>
