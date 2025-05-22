@@ -67,7 +67,19 @@
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 	
+	<style>
 	
+	#qrcode canvas{
+	
+	
+	display:block !important;
+	
+	
+	}
+	
+	
+	
+	</style>
 	
   <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
   <script>
@@ -88,10 +100,11 @@
       }
 
       qr = new QRCode(container, {
-        text: text,
-        width: 200,
-        height: 200
-      });
+  text: text,
+  width: 200,
+  height: 200,
+  render: "canvas" // Forces canvas rendering
+});
 
       // Show the download button after generation
       setTimeout(() => {
@@ -100,16 +113,22 @@
     }
 
     function downloadQR() {
-      const img = document.querySelector('#qrcode img');
-      if (!img) {
-        alert("QR Code not generated yet.");
-        return;
-      }
-      const link = document.createElement('a');
-      link.href = img.src;
-      link.download = "qrcode.png";
-      link.click();
-    }
+  const canvas = document.querySelector('#qrcode canvas');
+  if (!canvas) {
+    alert("QR Code not generated yet.");
+    return;
+  }
+
+  const link = document.createElement('a');
+  link.href = canvas.toDataURL("image/png");
+  link.download = "qrcode.png";
+  
+  // Needed for mobile browsers (iOS Safari)
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
   </script>
 </head>
 <body class="is-boxed has-animations">
