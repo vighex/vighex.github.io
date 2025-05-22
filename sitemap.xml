@@ -1,25 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://www.vighex.in/</loc>
-      <lastmod>2025-05-19</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>1.0</priority>
-   </url>
-   <url>
-      <loc>https://www.vighex.in/about.html</loc>
-      <lastmod>2025-05-10</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   
-   
-   <url>
-  <loc>https://vighex.in/index.html</loc>
-  <image:image>
-    <image:loc>https://vighex.in/assets/images/vighex_1.png</image:loc>
-    <image:caption>VigHex Technologies</image:caption>
-  </image:image>
-</url>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://vighex.in/</loc>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://vighex.in/assets/images/vighex_1.png</image:loc>
+      <image:caption>VigHex Technologies Logo</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://vighex.in/about.html</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://vighex.in/assets/images/about-banner.jpg</image:loc>
+      <image:caption>About VigHex - AI and ID Solutions</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://vighex.in/contact.html</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Products Page -->
+  <url>
+    <loc>https://vighex.in/products.html</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://vighex.in/assets/images/product-showcase.png</image:loc>
+      <image:caption>QR Generators, ID Software and AI Tools</image:caption>
+    </image:image>
+  </url>
+
+  <!-- QR Code Generator Page -->
+  <url>
+    <loc>https://vighex.in/QR_AI/QR_AI.html</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://vighex.in/QR_AI/preview.png</image:loc>
+      <image:caption>QR Code Generator by VigHex</image:caption>
+    </image:image>
+  </url>
 
 </urlset>
